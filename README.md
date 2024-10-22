@@ -15,7 +15,7 @@ It provides new functions to panoptic such as new embeddings, new clustering, te
 
 # Installation
 
-`pip install git+https://github.com/{{username}}/{{repo_name}}.git`
+Copy the url of the git repository directly in panoptic in the add a plugin with git interface: the url should look like this: `https://github.com/{{username}}/{{repo_name}}`
 
 # Functions
 
