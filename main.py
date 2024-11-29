@@ -16,8 +16,8 @@ class PluginParams(BaseModel):
   
   
 class PluginExample(APlugin):  
-    def __init__(self, project: PluginProjectInterface, plugin_path: str):  
-        super().__init__(name='PluginExample',project=project, plugin_path=plugin_path)  
+    def __init__(self, project: PluginProjectInterface, plugin_path: str, name: str):  
+        super().__init__(name=name,project=project, plugin_path=plugin_path)  
         self.params = PluginParams()  
 
         self.project.on_instance_import(self.compute_image_vector)
